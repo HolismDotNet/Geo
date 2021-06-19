@@ -1,7 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <Import Project="$(HolismProjectsRoot)\Framework\DotNet.targets" />
+
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Holism.Geo.DataAccess</AssemblyName>
+    <RootNamespace>Holism.Geo.DataAccess</RootNamespace>
   </PropertyGroup>
+
+  <Import Project="$(HolismProjectsRoot)\Framework\DataAccess.targets" />
+  <Import Project="$(HolismProjectsRoot)\Framework\Reusable.targets" />
 
 </Project>
