@@ -7,11 +7,11 @@ namespace Holism.Geo.DataAccess
 {
     public class Config : Holism.Framework.Config
     {
-        public static string DatabaseConnectionString
+        public static string ConnectionStringName
         {
             get
             {
-                return GetSetting("GeoDatabase");
+                return "GeoDatabase";
             }
         }
     }
