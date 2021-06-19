@@ -1,0 +1,4 @@
+{
+    "Master": "data source=.;initial catalog=master;user id=developer; password=developer;application name=Geo;",
+    "Geo": "data source=.; initial catalog=Geo; user id=developer; password=developer;application name=Geo;"
+}
