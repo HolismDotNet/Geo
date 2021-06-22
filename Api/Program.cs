@@ -1,12 +1,16 @@
-﻿using System;
+﻿using Holism.Api;
 
-namespace Api
+namespace Holism.Geo.Api
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Startup.AddControllerSearchAssembly(typeof(Controllers.CountryController).Assembly);
+            Holism.Api.Config.ConfigureEverything();
+            // Holism.Identities.PublicApi.Config.ConfigureEverything();
+            // Holism.Identities.AdminApi.Config.ConfigureEverything();
+            Application.Run();
         }
     }
 }
