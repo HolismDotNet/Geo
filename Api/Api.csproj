@@ -1,8 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <Import Project="$(HolismProjectsRoot)\Framework\DotNet.targets" />
+
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Holism.Geo.Api</AssemblyName>
+    <RootNamespace>Holism.Geo.Api</RootNamespace>
   </PropertyGroup>
+
+  <Import Project="$(HolismProjectsRoot)\Framework\Api.targets" />
+  <Import Project="$(HolismProjectsRoot)\Framework\Reusable.targets" />
 
 </Project>

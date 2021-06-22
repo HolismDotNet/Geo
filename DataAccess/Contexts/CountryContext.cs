@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using Holism.Geo.Models;
 
-namespace Holism.Geo.DataAccess.DbContexts
+namespace Holism.Geo.DataAccess.Contexts
 {
     public class CountryContext : DbContext
     {
