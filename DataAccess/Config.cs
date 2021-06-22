@@ -11,7 +11,7 @@ namespace Holism.Geo.DataAccess
         {
             get
             {
-                return "GeoDatabase";
+                return "Geo";
             }
         }
     }
