@@ -22,7 +22,7 @@ services:
         depends_on: 
             - "sql"
     sql:
-        image: mcr.microsoft.com/mssql/server:2019-latest
+        image: mcr.microsoft.com/mssql/server
         restart: always
         container_name: ${Package}Sql
         volumes:
