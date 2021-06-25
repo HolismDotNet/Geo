@@ -34,3 +34,12 @@ services:
             - MSSQL_PID=Express
         ports:
             - 1433:1433
+        command: >
+            sh -c
+            "
+            echo 'running SQL Server from ->' $PWD
+            && /opt/mssql/bin/sqlservr
+            && /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P "lksU2o412f7tBj58t07B"
+            && create database ${Package}
+            && go
+            "
