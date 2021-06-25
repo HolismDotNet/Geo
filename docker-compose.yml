@@ -24,17 +24,13 @@ services:
     sql:
         image: mcr.microsoft.com/mssql/server
         restart: always
+        user: root
         container_name: ${Package}Sql
         volumes:
-            - ./Database:/var/opt/mssql
+            - ./Database:/database
         environment: 
             - ACCEPT_EULA=Y
             - SA_PASSWORD=lksU2o412f7tBj58t07B
             - MSSQL_PID=Express
         ports:
             - 1433:1433
-        command: >
-            sh -c
-            "
-            tail -f /dev/null
-            "
