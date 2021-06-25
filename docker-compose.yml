@@ -23,23 +23,22 @@ services:
             - "sql"
     sql:
         image: mcr.microsoft.com/mssql/server
-        restart: always
+        #restart: always
         user: root
         container_name: ${Package}Sql
         volumes:
-            - ./Database:/database
+            - ./Database:/Database
         environment: 
             - ACCEPT_EULA=Y
             - SA_PASSWORD=lksU2o412f7tBj58t07B
             - MSSQL_PID=Express
+            - Reusable=Geo
         ports:
             - 1433:1433
         command: >
             sh -c
             "
-            echo 'running SQL Server from ->' $PWD
-            && /opt/mssql/bin/sqlservr
-            && /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P "lksU2o412f7tBj58t07B"
-            && create database ${Package}
-            && go
+            /Database/CreateDatabase.sh &
+            /opt/mssql/bin/sqlservr
             "
+# & /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P lksU2o412f7tBj58t07B -Q 'create database Geo'
