@@ -1,13 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <Import Project="$(HolismProjectsRoot)\Framework\DotNet.targets" />
+  <Import Project="/HolismDotNet/Framework/DotNet.targets" />
 
   <PropertyGroup>
     <AssemblyName>Holism.Geo.Models</AssemblyName>
     <RootNamespace>Holism.Geo.Models</RootNamespace>
   </PropertyGroup>
 
-  <Import Project="$(HolismProjectsRoot)\Framework\Models.targets" />
-  <Import Project="$(HolismProjectsRoot)\Framework\Reusable.targets" />
+  <Import Project="/HolismDotNet/Framework/Models.targets" />
+  <Import Project="/HolismDotNet/Framework/Reusable.targets" />
 
 </Project>
