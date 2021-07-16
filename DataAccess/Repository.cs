@@ -1,5 +1,4 @@
 using Holism.Geo.Models;
-using Holism.Geo.DataAccess.Contexts;
 using Holism.DataAccess;
 
 namespace Holism.Geo.DataAccess
@@ -10,7 +9,7 @@ namespace Holism.Geo.DataAccess
         {
             get
             {
-                return new Holism.DataAccess.Repository<Country>(new CountryContext());
+                return new Holism.DataAccess.Repository<Country>(new GeoContext());
             }
         }
     }
