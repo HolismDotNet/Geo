@@ -1,0 +1,22 @@
+<Project>
+  
+  <ItemGroup>
+    <Reference Include="Holism.Geo.Models">
+      <HintPath>/HolismDotNet/Geo/Packages/Holism.Geo.Models.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Holism.Geo.DataAccess">
+      <HintPath>/HolismDotNet/Geo/Packages/Holism.Geo.DataAccess.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Holism.Geo.Business">
+      <HintPath>/HolismDotNet/Geo/Packages/Holism.Geo.Business.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Holism.Geo.Models">
+      <HintPath>/HolismDotNet/Geo/Packages/Holism.Geo.Models.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
