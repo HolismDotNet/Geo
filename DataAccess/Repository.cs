@@ -9,7 +9,8 @@ namespace Holism.Geo.DataAccess
         {
             get
             {
-                return new Holism.DataAccess.Repository<Country>(new GeoContext());
+                return new Holism.DataAccess.Repository<Country
+                >(new GeoContext());
             }
         }
     }

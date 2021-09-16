@@ -1,0 +1,35 @@
+{
+    "name": "Geo",
+    "tables": [
+        {
+            "name": "Countries",
+            "hasGuid": true,
+            "columns": [
+                {
+                    "name": "Name"
+                },
+                {
+                    "name": "Capital"
+                },
+                {
+                    "name": "OfficialName"
+                },
+                {
+                    "name": "AlternativeName"
+                },
+                {
+                    "name": "IsoTwoLetterCode"
+                },
+                {
+                    "name": "IsoThreeLetterCode"
+                },
+                {
+                    "name": "IsoNumericCode"
+                },
+                {
+                    "name": "Cctld"
+                }
+            ]
+        }
+    ]
+}

@@ -1,7 +1,7 @@
-using Holism.DataAccess;
-using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using Holism.Geo.Models;
+using Holism.DataAccess;
+using Microsoft.EntityFrameworkCore;
 
 namespace Holism.Geo.DataAccess
 {
@@ -11,9 +11,9 @@ namespace Holism.Geo.DataAccess
 
         public DbSet<Country> Countries { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder builder)
         {
-            base.OnModelCreating(modelBuilder);
+            base.OnModelCreating(builder);
         }
     }
 }
