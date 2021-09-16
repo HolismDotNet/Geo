@@ -29,7 +29,8 @@
                 {
                     "name": "Cctld"
                 }
-            ]
+            ],
+            "dataFile": "Countries.json"
         }
     ]
 }
