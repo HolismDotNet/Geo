@@ -13,5 +13,14 @@ namespace Holism.Geo.DataAccess
                 >(new GeoContext());
             }
         }
+
+        public static Repository<TimeZone> TimeZone
+        {
+            get
+            {
+                return new Holism.DataAccess.Repository<TimeZone
+                >(new GeoContext());
+            }
+        }
     }
 }

@@ -11,6 +11,8 @@ namespace Holism.Geo.DataAccess
 
         public DbSet<Country> Countries { get; set; }
 
+        public DbSet<TimeZone> TimeZones { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
