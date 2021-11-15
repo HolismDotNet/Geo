@@ -31,6 +31,18 @@
                 }
             ],
             "dataFile": "Countries.json"
+        },
+        {
+            "name": "TimeZones",
+            "columns": [
+                {
+                    "name": "CountryId"
+                },
+                {
+                    "name": "TimeZoneIdentifier",
+                    "isUnique": true
+                }
+            ]
         }
     ]
 }
