@@ -15,6 +15,7 @@ namespace Holism.Geo.DataAccess
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            
             base.OnModelCreating(builder);
         }
     }
