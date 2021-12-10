@@ -10,11 +10,11 @@ public class Repository
         }
     }
 
-    public static Repository<TimeZone> TimeZone
+    public static Repository<Models.TimeZone> TimeZone
     {
         get
         {
-            return new Repository<TimeZone>(new GeoContext());
+            return new Repository<Models.TimeZone>(new GeoContext());
         }
     }
 }
