@@ -1,18 +1,17 @@
-namespace Holism.Geo.Models
+namespace Holism.Geo.Models;
+
+public class TimeZone : IEntity
 {
-    public class TimeZone : Holism.Models.IEntity
+    public TimeZone()
     {
-        public TimeZone()
-        {
-            RelatedItems = new System.Dynamic.ExpandoObject();
-        }
-
-        public long Id { get; set; }
-
-        public long CountryId { get; set; }
-
-        public string TimeZoneIdentifier { get; set; }
-
-        public dynamic RelatedItems { get; set; }
+        RelatedItems = new ExpandoObject();
     }
+
+    public long Id { get; set; }
+
+    public long CountryId { get; set; }
+
+    public string TimeZoneIdentifier { get; set; }
+
+    public dynamic RelatedItems { get; set; }
 }

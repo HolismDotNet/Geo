@@ -1,26 +1,20 @@
-using Holism.Geo.Models;
-using Holism.DataAccess;
+namespace Holism.Geo.DataAccess;
 
-namespace Holism.Geo.DataAccess
+public class Repository
 {
-    public class Repository
+    public static Repository<Country> Country
     {
-        public static Repository<Country> Country
+        get
         {
-            get
-            {
-                return new Holism.DataAccess.Repository<Country
-                >(new GeoContext());
-            }
+            return new Repository<Country>(new GeoContext());
         }
+    }
 
-        public static Repository<TimeZone> TimeZone
+    public static Repository<TimeZone> TimeZone
+    {
+        get
         {
-            get
-            {
-                return new Holism.DataAccess.Repository<TimeZone
-                >(new GeoContext());
-            }
+            return new Repository<TimeZone>(new GeoContext());
         }
     }
 }
