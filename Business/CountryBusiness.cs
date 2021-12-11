@@ -39,6 +39,7 @@ namespace Holism.Geo.Business
             {
                 item.RelatedItems.OneByOneFlagRelativeUrl = $"/images/flags/oneByOne/{item.IsoTwoLetterCode.ToLower()}.svg";
                 item.RelatedItems.FourByThreeFlagRelativeUrl = $"/images/flags/fourByThree/{item.IsoTwoLetterCode.ToLower()}.svg";
+                item.RelatedItems.Flag = "https://flagcdn.com/useThisCdnToGetFlags";
             }
             base.ModifyItemBeforeReturning(item);
         }
