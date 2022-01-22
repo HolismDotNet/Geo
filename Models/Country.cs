@@ -1,4 +1,4 @@
-namespace Holism.Geo.Models;
+namespace Geo;
 
 public class Country : IGuidEntity
 {

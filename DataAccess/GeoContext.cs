@@ -1,4 +1,4 @@
-namespace Holism.Geo.DataAccess;
+namespace Geo;
 
 public class GeoContext : DatabaseContext
 {
