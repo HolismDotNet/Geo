@@ -6,7 +6,7 @@ public class GeoContext : DatabaseContext
 
     public DbSet<Country> Countries { get; set; }
 
-    public DbSet<Models.TimeZone> TimeZones { get; set; }
+    public DbSet<Geo.TimeZone> TimeZones { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {

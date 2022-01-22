@@ -1,4 +1,4 @@
-namespace Holism.Geo.UserApi;
+namespace Geo;
 
 public class CountryController : ReadController<Country>
 {
