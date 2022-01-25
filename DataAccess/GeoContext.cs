@@ -4,7 +4,7 @@ public class GeoContext : DatabaseContext
 {
     public override string ConnectionStringName => "Geo";
 
-    public DbSet<Country> Countries { get; set; }
+    public DbSet<Geo.Country> Countries { get; set; }
 
     public DbSet<Geo.TimeZone> TimeZones { get; set; }
 
