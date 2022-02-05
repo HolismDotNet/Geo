@@ -1,6 +1,6 @@
 namespace Geo;
 
-public class Country : IGuidEntity
+public class Country : IEntity, IGuid
 {
     public Country()
     {
