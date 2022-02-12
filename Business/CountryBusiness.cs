@@ -2,9 +2,9 @@ namespace Geo;
 
 public class CountryBusiness : Business<Country, Country>
 {
-    protected override Repository<Country> WriteRepository => Repository.Country;
+    protected override Read<Country> Read => Repository.Country;
 
-    protected override ReadRepository<Country> ReadRepository => Repository.Country;
+    protected override Write<Country> Write => Repository.Country;
 
     private static Dictionary<Guid, Country> countriesByGuid;
 

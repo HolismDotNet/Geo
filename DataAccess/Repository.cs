@@ -2,19 +2,19 @@ namespace Geo;
 
 public class Repository
 {
-    public static Repository<Geo.Country> Country
+    public static Write<Geo.Country> Country
     {
         get
         {
-            return new Repository<Geo.Country>(new GeoContext());
+            return new Write<Geo.Country>(new GeoContext());
         }
     }
 
-    public static Repository<Geo.TimeZone> TimeZone
+    public static Write<Geo.TimeZone> TimeZone
     {
         get
         {
-            return new Repository<Geo.TimeZone>(new GeoContext());
+            return new Write<Geo.TimeZone>(new GeoContext());
         }
     }
 }
