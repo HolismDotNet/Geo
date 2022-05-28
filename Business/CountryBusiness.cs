@@ -33,7 +33,7 @@ public class CountryBusiness : Business<Country, Country>
 
     public Country GetByName(string name)
     {
-        var country = GetOrNull(i => i.Name.ToLower() == name.ToLower());
+        var country = Get(i => i.Name.ToLower() == name.ToLower());
         if (country == null)
         {
             throw new ClientException($"No country named {name} is found");
@@ -41,7 +41,7 @@ public class CountryBusiness : Business<Country, Country>
         return country;
     }
 
-    public Country GetOrNullFromCache(Guid guid)
+    public Country GetFromCache(Guid guid)
     {
         if (CountriesByGuid.ContainsKey(guid))
         {
@@ -52,7 +52,7 @@ public class CountryBusiness : Business<Country, Country>
 
     public Country GetByIsoTwoLetterCode(string isoTwoLetterCode)
     {
-        var country = GetOrNull(i => i.IsoTwoLetterCode.ToLower() == isoTwoLetterCode.ToLower());
+        var country = Get(i => i.IsoTwoLetterCode.ToLower() == isoTwoLetterCode.ToLower());
         if (country == null)
         {
             throw new ClientException($"No country with IsoTwoLetterCode '{isoTwoLetterCode}' is found");
