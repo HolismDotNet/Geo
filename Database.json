@@ -40,7 +40,7 @@
                 },
                 {
                     "name": "TimeZoneIdentifier",
-                    "isUnique": true
+                    "unique": true
                 }
             ]
         }
